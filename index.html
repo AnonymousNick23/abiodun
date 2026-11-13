@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10231f" />
+  <meta name="description" content="Discover beautiful homes and investment properties with Nicholas Real Estate." />
+  <title>Nicholas Real Estate | Find a place to call home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">
+    <span>YOUR NEXT CHAPTER STARTS AT HOME</span>
+    <span class="announcement-contact">Speak with our property team · <a href="https://wa.me/2348164406684" target="_blank" rel="noopener">0816 440 6684</a></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Abiodun Real Estate home">
+      <span class="brand-mark">A<span>R</span></span>
+      <span class="brand-copy"><strong>ABIODUN</strong><small>REAL ESTATE</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Dashboard</a>
+      <a href="#explore" class="nav-link">Explore</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a class="header-cta" href="#explore">Find a property <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-top"><span>MENU</span><button id="closeMenu" aria-label="Close menu">×</button></div>
+    <a href="#home">Dashboard <span>01</span></a>
+    <a href="#explore">Explore properties <span>02</span></a>
+    <a href="#about">About us <span>03</span></a>
+    <a href="#contact">Contact <span>04</span></a>
+    <p>Find your place. Make it yours.</p>
+  </div>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> REAL ESTATE, MADE PERSONAL</div>
+        <h1>Find a place<br>to <em>call home.</em></h1>
+        <p class="hero-description">Thoughtfully selected homes and properties for every new beginning. Let’s find the right space for your next chapter.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#explore">Explore properties <span>↗</span></a>
+          <a class="text-link" href="#about">Discover our story <span>→</span></a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars"><span>AR</span><span>✓</span><span>+</span></div>
+          <div><strong>Personal service. Better moves.</strong><small>Guidance from search to keys.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image" role="img" aria-label="Modern luxury home surrounded by greenery"></div>
+        <div class="hero-image-label"><span class="label-dot"></span> A better place to begin</div>
+        <div class="hero-stamp"><span>YOUR</span><strong>HOME</strong><span>AWAITS</span><b>✳</b></div>
+        <div class="hero-caption"><span>01 / 10</span><span>CURATED PROPERTY COLLECTION</span></div>
+      </div>
+      <div class="hero-bottom-rule"></div>
+    </section>
+
+    <section class="quick-search section-wrap" aria-label="Property search">
+      <div class="search-intro"><span class="mini-icon">⌕</span><div><strong>Let’s find your space</strong><small>Start with what matters to you</small></div></div>
+      <label class="search-field"><span>PROPERTY TYPE</span><select id="typeFilter"><option value="all">All properties</option><option value="Apartment">Apartment</option><option value="Duplex">Duplex</option><option value="Detached house">Detached house</option><option value="Terrace">Terrace</option><option value="Land">Land</option></select></label>
+      <label class="search-field"><span>LOCATION</span><select id="locationFilter"><option value="all">Any location</option><option value="Lekki">Lekki</option><option value="Ikeja">Ikeja</option><option value="Ajah">Ajah</option><option value="Ikoyi">Ikoyi</option><option value="Abuja">Abuja</option></select></label>
+      <button class="search-button" id="searchButton">Find a home <span>→</span></button>
+    </section>
+
+    <section class="featured section-wrap" id="featured">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> A FEW PLACES WE LOVE</div><h2>Featured <em>homes.</em></h2></div>
+        <div class="slider-controls"><span class="slider-count" id="slideCount">01 <i>/ 10</i></span><button id="prevSlide" aria-label="Previous property">←</button><button id="nextSlide" aria-label="Next property">→</button></div>
+      </div>
+      <div class="featured-slider" id="featuredSlider">
+        <div class="featured-image" id="featuredImage">
+          <div class="featured-overlay">
+            <span class="featured-tag">FEATURED PROPERTY</span>
+            <div><p id="featuredLocation">LEKKI PHASE 1, LAGOS</p><h3 id="featuredTitle">The Willow Residence</h3><div class="featured-meta"><span id="featuredType">4 Bedroom Duplex</span><span id="featuredPrice">₦85,000,000</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-progress"><span id="sliderProgress"></span></div>
+      <p class="slider-note">A considered collection of homes, selected to inspire your next move.</p>
+    </section>
+
+    <section class="explore section-wrap" id="explore">
+      <div class="section-heading explore-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> THE PROPERTY COLLECTION</div><h2>Spaces for every <em>story.</em></h2><p>Explore homes and opportunities selected with you in mind.</p></div>
+        <div class="explore-side"><span class="property-total" id="propertyTotal">20 PROPERTIES</span><a class="text-link" href="#contact">Need a little help? <span>→</span></a></div>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-pills" id="categoryFilters">
+          <button class="filter-pill active" data-category="all">All properties</button>
+          <button class="filter-pill" data-category="Apartment">Apartments</button>
+          <button class="filter-pill" data-category="Duplex">Duplexes</button>
+          <button class="filter-pill" data-category="Detached house">Detached homes</button>
+          <button class="filter-pill" data-category="Land">Land</button>
+        </div>
+        <label class="sort-select">SORT BY <select id="sortFilter"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+      </div>
+      <div class="property-grid" id="propertyGrid"></div>
+      <div class="grid-footer"><span id="resultsText">Showing 12 of 20 properties</span><button class="button button-outline" id="loadMore">Load more properties <span>＋</span></button></div>
+    </section>
+
+    <section class="marquee-band" aria-label="Company message"><div class="marquee-track"><span>FIND YOUR PLACE</span><b>✳</b><span>MAKE YOUR MOVE</span><b>✳</b><span>LIVE YOUR STORY</span><b>✳</b><span>FIND YOUR PLACE</span><b>✳</b><span>MAKE YOUR MOVE</span><b>✳</b><span>LIVE YOUR STORY</span><b>✳</b></div></section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Warm modern living room with large windows" loading="lazy"><span class="image-note">A PLACE THAT FEELS LIKE YOU.</span></div>
+      <div class="about-copy"><div class="eyebrow"><span class="eyebrow-line"></span> THE ABIODUN DIFFERENCE</div><h2>More than a property.<br><em>A place to belong.</em></h2><p>At Abiodun Real Estate, we believe finding a home should feel exciting, clear and personal. We bring people and properties together with thoughtful guidance, responsive service and attention to the details that matter.</p><p>Whether you are renting, buying or exploring an investment, we are here to help you make your next move with confidence.</p><a class="button button-dark" href="#contact">Let’s talk about your move <span>↗</span></a><div class="about-signature">ABIODUN REAL ESTATE <span>— FIND YOUR PLACE.</span></div></div>
+    </section>
+
+    <section class="values section-wrap">
+      <div class="value-card"><span class="value-icon">⌂</span><h3>Spaces that fit</h3><p>Property options shaped around your needs, lifestyle and plans.</p></div>
+      <div class="value-card"><span class="value-icon">♡</span><h3>People come first</h3><p>Friendly, personal support at every step of your property journey.</p></div>
+      <div class="value-card"><span class="value-icon">✳</span><h3>Confidence in every move</h3><p>Clear communication to help you make informed decisions.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner section-wrap"><div><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR NEXT MOVE STARTS HERE</div><h2>Let’s find your<br><em>somewhere.</em></h2><p>Tell us what you’re looking for. We’d love to help you find it.</p></div><div class="contact-actions"><a class="button button-light" href="https://wa.me/2348164406684?text=Hello%20Abiodun%20Real%20Estate%2C%20I%27m%20interested%20in%20finding%20a%20property." target="_blank" rel="noopener">Chat with us on WhatsApp <span>↗</span></a><a href="tel:+2348164406684" class="contact-phone">0816 440 6684</a><span class="contact-small">We’re one message away.</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap"><div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark">A<span>R</span></span><span class="brand-copy"><strong>ABIODUN</strong><small>REAL ESTATE</small></span></a><p>Helping you find the space<br>for your next chapter.</p></div><div class="footer-column"><span>EXPLORE</span><a href="#home">Dashboard</a><a href="#explore">Properties</a><a href="#about">About us</a></div><div class="footer-column"><span>GET IN TOUCH</span><a href="https://wa.me/2348164406684" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+2348164406684">0816 440 6684</a><a href="#contact">Contact</a></div><div class="footer-note"><span>THE RIGHT PLACE CHANGES EVERYTHING.</span><a href="#home">Back to top ↑</a></div></div>
+    <div class="footer-bottom section-wrap"><span>© <span id="year"></span> Abiodun Real Estate. All rights reserved.</span><span>MADE FOR YOUR NEXT CHAPTER.</span></div>
+  </footer>
+
+  <div class="modal-backdrop" id="bookingModal" aria-hidden="true">
+    <div class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close booking dialog">×</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-content"><div class="eyebrow"><span class="eyebrow-line"></span> PROPERTY ENQUIRY</div><h2 id="modalTitle">Make this place yours.</h2><p id="modalDescription">You’re one step away from speaking with our property team.</p><div class="modal-property" id="modalProperty"></div><a class="button button-whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener"><span class="whatsapp-icon">◉</span> Continue to WhatsApp <span>↗</span></a><small class="modal-disclaimer">WhatsApp will open with your property enquiry ready to send.</small></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
